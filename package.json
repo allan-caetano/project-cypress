@@ -1,0 +1,22 @@
+{
+  "name": "auto-cypress",
+  "version": "1.0.0",
+  "description": "automacao em cypress",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "cypress run --browser chrome --no-exit",
+    "test": "cypress open"
+  },
+  "author": "Allan Caetano",
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "cypress": "^10.9.0",
+    "esbuild": "^0.15.10",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "devDependencies": {
+    "mochawesome": "^7.1.3"
+  }
+}

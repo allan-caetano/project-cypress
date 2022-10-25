@@ -1,0 +1,116 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-10-25T18:57:28.922Z",
+    "end": "2022-10-25T18:57:41.459Z",
+    "duration": 12537,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ab37194f-b47d-4308-b156-e609fe26833c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\features\\pesquisa.feature",
+      "file": "cypress\\e2e\\features\\pesquisa.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "df332683-80ca-4699-a27b-f81aa00fad9a",
+          "title": "Pesquisar no sistema de Teste WEB",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visualizar a Pesquisar no site",
+              "fullTitle": "Pesquisar no sistema de Teste WEB Visualizar a Pesquisar no site",
+              "timedOut": null,
+              "duration": 9623,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `div[data-alerts]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `div[data-alerts]`, but never found it.\n    at Pesquisar.verAlert (http://the-internet.herokuapp.com/__cypress/tests?p=cypress\\e2e\\features\\pesquisa.feature:10100:42)\n    at Context.eval (http://the-internet.herokuapp.com/__cypress/tests?p=cypress\\e2e\\features\\pesquisa.feature:10124:33)\n    at Registry.runStepDefininition (http://the-internet.herokuapp.com/__cypress/tests?p=cypress\\e2e\\features\\pesquisa.feature:8668:48)\n    at Context.eval (http://the-internet.herokuapp.com/__cypress/tests?p=cypress\\e2e\\features\\pesquisa.feature:9533:48)",
+                "diff": null
+              },
+              "uuid": "42c37afd-8ccf-4641-8d3c-6454196fa110",
+              "parentUUID": "df332683-80ca-4699-a27b-f81aa00fad9a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "42c37afd-8ccf-4641-8d3c-6454196fa110"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 9623,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[status]-[name]",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": false
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "autoOpen": true,
+        "inline": true,
+        "reportPageTitle": "Reltórios de Testes Web",
+        "code": false,
+        "charts": true,
+        "reportFilename": "[status]-[name]",
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "timestamp": "mm-dd-_HH-MM-ss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
