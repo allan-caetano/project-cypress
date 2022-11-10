@@ -5,9 +5,9 @@ Given("Acesso ao site", () => {
     PesquisaPage.acessarSite();
 })
 
-When("faço a autenticação", () => {
+When("faço a autenticação {string}", (user) => {
     PesquisaPage.clicarForm();
-    PesquisaPage.insertName();
+    PesquisaPage.insertName(user);
     PesquisaPage.inserPass();
     PesquisaPage.clicarLogin();
 })

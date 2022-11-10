@@ -15,7 +15,6 @@ const clicarLogin = () => {
 }
 
 const verMensagem = () =>{
-    cy.screenshot();
     return cy.get('div[data-alert]')
 }
 

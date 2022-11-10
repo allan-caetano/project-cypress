@@ -1,14 +1,14 @@
-import {PesquisaElements} from "../elements/PesquisaElements.cy";
+import { PesquisaElements } from "../elements/PesquisaElements.cy";
 
-class Pesquisar{
+class Pesquisar {
 
     // elements = {
     //     pesquisarProduto: () => cy.get('.gLFyf'),
     //   };
 
-      acessarSite() {
+    acessarSite() {
         cy.wait(1000)
-        cy.visit('http://the-internet.herokuapp.com/'); 
+        cy.visit('http://the-internet.herokuapp.com/');
     }
 
     clicarForm() {
@@ -16,19 +16,19 @@ class Pesquisar{
         cy.wait(800)
     }
 
-    insertName(){
-        PesquisaElements.insertName().type("Allan")
+    insertName(user) {
+        PesquisaElements.insertName().type(user)
     }
 
-    inserPass(){
+    inserPass() {
         PesquisaElements.insertPass().type("123456")
     }
 
-    clicarLogin(){
+    clicarLogin() {
         PesquisaElements.clicarLogin().click();
     }
 
-    verAlert(){
+    verAlert() {
         PesquisaElements.verMensagem().should('be.visible')
     }
 }
